@@ -1,8 +1,8 @@
 name: Welcome New Contributors
 
 on:
-  pull_request:
-    types: [opened]
+on:
+  workflow_dispatch:    
 
 jobs:
   greet:
@@ -14,4 +14,4 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           pr-message: |
             👋 Hi there! Thanks for opening your first pull request!
-            We appreciate your contribution. Please make sure to follow the contribution guidelines.
+            We appreciate your contribution. Please make sure to follow the contribution guidelines
